@@ -14,29 +14,51 @@
     border-radius: 20px;
 
 }
+
+
 .keanu{
 
     background-image: url("keanu-mirror.jpg");
     background-size: cover;
-  
+    transform: scale(1, 1);
 }
 
+.keanu:hover{
+    background-image: url("keanu-government.png");
+}
+.keanu:hover{
+    transform: scale(2,2);
+    transition: 1s;
+}
 
 
 .middle{
 
     background-image: url("2.jpg");
     background-size: cover;
-
-    
-    
+    filter: grayscale(90%);
 }
 
+.middle:hover{
+    filter: grayscale(0%);
+    transition: 1s;
+    transform: rotate(180deg);
+    transform-origin: top ;
+
+}
 
 .leo{
     background-image: url("leo.jpg");
     background-size:cover;
     border-radius: 100px;
+    filter: grayscale(90%);
+}
+
+.leo:hover{
+    filter: grayscale(0%);
+    border-radius: 20px;
+    transition: border-radius 2s;
+    transition: 2s;
 }
 
 
@@ -54,7 +76,12 @@
     background-repeat: no-repeat;
     height: 150px;
     width : 1200px;
+    transform: translateX(0px);
+}
 
+.voiture:hover{
+    transform: translateX(800px);
+    transition: 5s;
 }
 
 
